@@ -1,0 +1,22 @@
+brew "git"
+brew "cmake"
+brew "autoconf"
+brew "wget"
+brew "jq"
+brew "gmp"
+brew "libuv"
+brew "openssl"
+brew "curl-openssl"
+# For Php gmagick extension
+brew "graphicsmagick"
+# For Php amqp extension
+brew "rabbitmq-c"
+
+brew "composer"
+brew "php@7.2"
+brew "php@7.4"
+
+brew "yarn"
+brew "awscli"
+
+brew "nginx"

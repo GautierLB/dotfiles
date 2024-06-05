@@ -10,10 +10,9 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
-source /usr/local/var/www/setup-dev-env/cloud-tools/cloud_functions.sh
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/gautier/.oh-my-zsh"
+export ZSH="/Users/g.lebissonnais/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,10 +105,22 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-alias  ws="cd /usr/local/var/www"
+alias zshconfig="nano ~/.zshrc"
+alias ohmyzsh="nano ~/.oh-my-zsh"
+alias  ws="/Users/g.lebissonnais/space/products"
 alias bco="make test && make cs-fix && make phpstan"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/g.lebissonnais/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/g.lebissonnais/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/g.lebissonnais/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/g.lebissonnais/google-cloud-sdk/completion.zsh.inc'; fi
+alias python=/usr/local/bin/python3
+alias pinata='ssh-add && pinata-ssh-forward'
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/g.lebissonnais/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

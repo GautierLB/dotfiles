@@ -1,7 +1,7 @@
 [core]
-	excludesfile = /Users/gautier/.gitignore_global
+	excludesfile = /Users/g.lebissonnais/.gitignore_global
 [user]
 	name = Gautier Le Bissonnais
-	email = glebissonnais.externe@bedrockstreaming.com
+	email = gautier.lb@gmail.com
 [credential]
 	helper = osxkeychain
